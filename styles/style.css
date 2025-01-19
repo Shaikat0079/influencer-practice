@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Shared Styles */
+
+.purple-button{
+    background-color: #c9406e;
+    padding: 10px 30px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+/* Nav section */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-bars{
+    display: none;
+}
+
+nav>.fa-cart-shopping{
+    display: none;
+}
+
+.nav-ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.banner {
+  background-image: url(../assets/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  margin: 50px 0;
+  background-size: contain;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-decription {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+
+@media screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column-reverse;
+        background-position: top;
+        gap: 100px;
+    }
+
+    .banner-decription{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner img{
+        width: 100%;
+    }
+
+    nav>ul>li{
+        display: none;
+    }
+
+    .fa-bars{
+        display: block;
+    }
+
+    nav>.fa-cart-shopping{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px)  {
+    .banner{
+        flex-direction: column-reverse;
+        background-position: top;
+        background-size: auto;
+    }
+    .banner>img{
+        padding: 50px 0;
+
+    }
+    .banner-decription{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}
