@@ -171,6 +171,26 @@ nav > .fa-cart-shopping {
   }
 }
 
+/* Footer Section */
+
+footer{
+    background-color: slateblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.social-icons{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin: 20px auto;
+    gap: 20px;
+}
+
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .banner {
     flex-direction: column-reverse;
